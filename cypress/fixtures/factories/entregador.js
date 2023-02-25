@@ -1,8 +1,9 @@
 import { faker } from '@faker-js/faker';
+import { generate } from 'gerador-validador-cpf'
 
 export const entregador = {
   nome: faker.name.fullName(),
-  cpf: 34734633100,
+  cpf: generate(),
   email: faker.internet.email(),
   whatsapp: faker.phone.number('119####-####'),
   endereco: {
