@@ -9,6 +9,7 @@
   "author": "Bruna Lourencini",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "cypress": "^12.6.0",
     "cypress-file-upload": "^5.0.8"
   }
