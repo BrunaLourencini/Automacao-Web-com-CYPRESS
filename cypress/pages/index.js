@@ -21,7 +21,13 @@ class Form {
     cy.get(elCadastro.enderecoNumero).type(entregador.endereco.numero)
     cy.get(elCadastro.enderecoComplemento).type(entregador.endereco.complemento)
 
-    cy.get(elCadastro.metodoEntrega).click()
+    if (entregador.metodoEntrega == "Moto") {
+    cy.get(elCadastro.metodoEntregaMoto).click()
+    } else if (entregador.metodoEntrega == "Bicicleta") {
+      cy.get(elCadastro.metodoEntregaBike).click()
+    } else if (entregador.metodoEntrega == "Van/Carro") {
+      cy.get(elCadastro.metodoEntregaCar).click()
+    }
   }
 
   uploadCnh(cnh) {

@@ -1,7 +1,7 @@
 import { entregador } from "../fixtures/factories/entregador"
 import form from "../pages/index"
 
-describe('Cadastrar de entregador', () => {
+describe('Cadastrar entregador', () => {
   it('Cadastrar Entregador com Sucesso', () => {
     form.visit()
     form.acessarFormularioCadastro()
